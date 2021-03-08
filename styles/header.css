@@ -1,0 +1,52 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.company-name {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+}
+
+.nav-list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+}
+
+.nav-list__item {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.nav-list__item + .nav-list__item {
+    margin-left: 50px;
+}
+
+.bold-telephone-number {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+    .header {
+        flex-direction: column;
+    }
+
+    .nav-list {
+        margin: 20px 0;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 520px) {
+	.nav-list {
+		display: none;
+	}
+}

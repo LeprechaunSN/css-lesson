@@ -1,0 +1,76 @@
+.prices {
+    margin: 60px auto 67px auto;
+}
+
+.block-title {
+    margin-bottom: 15px;
+}
+
+.block-subtitle {
+    margin-bottom: 60px;
+}
+
+.price-list {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.price-category {
+    padding: 50px;
+    border: 1px solid #EBEBEB;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    margin-bottom: 20px;
+}
+ 
+.price-category + .price-category {
+    margin-left: 20px;
+}
+
+.price-category__apartment-size {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.price-category_accentuated {
+    border: 1px solid #FED100;
+}
+
+.price-category__price {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-bottom: 50px;
+}
+
+.price-category__car, .price-category__movers-numbers, .price-category__moving-time {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.price-category__car, .price-category__movers-numbers {
+    margin-bottom: 25px;
+}
+
+.price-category__apartment-size, .price-category__moving-time {
+    margin-bottom: 60px;
+}
+
+.yellow-button {
+    width: 250px;
+    height: 51px;
+    background: var(--yellow-bg-color);
+    border: none;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+@media (max-width: 724px) {
+    .price-category {
+        margin-left: 20px;
+	}
+}

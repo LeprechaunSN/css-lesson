@@ -1,0 +1,144 @@
+.page-title {
+    background-color: var(--yellow-bg-color);
+    min-height: 600px;
+}
+
+.page-title-wrapper {
+	position: relative;
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 40px 50px;
+	height: 100%;
+}
+
+.company-description {
+    max-width: 550px;
+    margin-top: 60px;
+}
+
+.company-activity__name {
+    font-weight: bold;
+    font-size: 70px;
+    line-height: 127%;
+}
+
+.company-activity__location {
+    font-weight: 600;
+    font-size: 30px;
+    line-height: 37px;
+    margin-top: 20px;
+}
+
+.order-service {
+    position: relative;
+    width: 304px;
+    height: 60px;
+    margin: 50px 0;
+}
+
+.order-service__button {
+    background: #FF352B;
+    color: #F2F2F2;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 29px;
+    border: none;
+    z-index: 2;
+}
+
+.order-service__button, .order-service__border {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.order-service__border {
+    top: 10px;
+    left: 10px;
+    border: 2px solid #F2F2F2;
+    box-sizing: border-box;
+}
+
+.company-advantages {
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.advantage {
+    display: flex;
+    align-items: center;
+}
+
+.advantage__img {
+    margin-right: 10px;
+    width: 40px;
+    height: 37px;
+}
+
+.advantage__name {
+    font-size: 16px;
+    line-height: 21px;
+}
+
+.page-title__courier-img {
+    bottom: 0;
+    left: calc(50% - 10px);
+    width: 380px;
+    height: 608px;
+    z-index: 2;
+}
+
+.page-title__courier-img, .page-title__gazelle-img {
+    position: absolute;
+}
+
+.page-title__gazelle-img {
+    right: 50px;
+    bottom: 170px;
+}
+
+@media (max-width: 1150px) {
+    .company-advantages {
+        flex-direction: column;
+    }
+
+    .advantage + .advantage {
+        margin-top: 10px;
+    }
+}
+
+@media (max-width: 930px) {
+    .page-title__gazelle-img {
+        display: none;
+    }
+}
+
+@media (max-width: 830px) {
+    .company-activity {
+        text-align: center;
+    }
+	
+	.company-info {
+		display: flex;
+		justify-content: center
+	}
+
+    .company-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-title__courier-img {
+        display: none;
+    }
+}
+
+@media (max-width: 430px) {
+    .company-activity__name {
+		font-size: 50px;
+	}
+}
+
